@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jspm</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    div.gifs img{
+      width: 50vw;
+      height: 50vh;
+      float: left;
+      display: block;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gifs">
+    <h1>Gifs</h1>
+  </div>
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import("lib/main");
+  </script>
+
+  <!-- Production Ready -->
+  <!-- <script src="jspm_packages/traceur-runtime.js"></script>
+  <script src="build.js"></script> -->
+</body>
+</html>
